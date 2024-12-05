@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.a{
+    background-color: yellow;
+    text-align: center;
+}
+.b{
+    display: flex;
+    column-gap: 10px;
+    height: 80px;
+    text-align: center;
+   
+}
+    
+
+    .b1{display: flex;
+    margin-left: 20px;
+justify-content: center;
+align-items: center;}
+
+    .b2{ height: 20px;
+    width: 500px;
+margin-left: 50px;
+border-radius: 50px;}
+.b3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+}
+.c{ 
+    display: flex;
+    column-gap: 20px;
+    display: inline;
+    justify-items: center;
+
+}
+h2{
+    border: 1px solid black;
+    display: inline;
+    
+}
+.e{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 50px;
+}
+.f{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+.g{
+    background-color: darksalmon;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 50px;
+}
+.h{
+    display: flex;
+    column-gap: 5px;
+    background-color: blanchedalmond;
+}
+.h11{ 
+    display: flex;
+    column-gap: 70px;
+}
+.i{
+    margin-top: 50px;
+}
+.j{
+    background-color:antiquewhite;
+    text-align: center;
+    height: 50px;
+    margin-top: 50px;
+    
+}
+.k{
+    display: flex;
+    column-gap: 10px;
+    background-color: antiquewhite;
+}
+.l{
+    background-color: orchid;
+    margin-top: 80px;
+    height: 500px;
+}
+.l1{
+    text-align: center;
+}
+.l6{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.l21{
+    display: flex;
+    column-gap: 100px;
+}
+.m{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-top: 50px;
+}
+.m2{
+    display: flex;
+    margin-left: 300px;
+}
+.n{
+    display: flex;
+    column-gap: 300px;
+    height: 100px;
+    margin-top: 50px;
+    border: 1px solid black;
+    align-items: center;
+}
+.n1{
+    display: flex;
+}
+.n2{
+    display: flex;
+}
+.n3{
+    display: flex;
+}
+.o{
+    margin-top: 50px;
+}
+.p{
+    background-color: rgb(231, 103, 103);
+    height: 300px;
+    margin-top: 50px;
+}
+.p1{
+   
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+}
+.p31{
+    display: flex;
+    margin-top: 50px;
+}
+.q{
+    display: flex;
+}
+.q1{
+    background-color: brown;
+    color: aliceblue;
+}
+
+</style>
+    
+
+    
+    
+</head>
+<body>
+    <div class="a">
+        <h3>Shop for Rs.9999 and Get 15% off. Use Code : PREMIUM15
+  
+        </h3>
+    </div>
+    <div class="b">
+    <img src="data:image/png;base64,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" alt="" height="80px" width="100px">
+    <div class="b1">
+        <p> ship to india</p>
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <input type="text" class="b2" placeholder="search kurta, shirt ,duppata etc">
+    </div>
+    <div class="b3">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    </div>
+    <div class="c">
+        <h2>new</h2>
+        <h2>shirt</h2>
+        <h2>pants</h2>
+        <h2>kurta</h2>
+        <h2>jackets</h2>
+        <h2>lower</h2>
+        <h2>socks</h2>
+        <h2>shorts</h2>
+        <h2>pajama</h2>
+        <h2>sarees</h2>
+        <h2>hand bags</h2>
+        <h2>jewellery</h2>
+        <h2>necklace</h2>
+        <h2>top brands</h2>
+        <h2>earbuds</h2>
+        <h2>neckbands</h2>
+    </div>
+    <div class="d">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dwe54c5c87/AW24/liva-aug22.jpg" alt="" height="400px" width="1000px">
+    </div>
+    <div class="e">
+
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dwaec11d45/A-Kriti/deal-main-nov29.jpg" alt="" height="200px" width="200px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw9c3c1610/A-Kriti/d1-aug26.jpg" alt="" height="200px" width="200px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw95ed7399/AW24/Deals/d3-aug26.jpg" alt="" height="200px" width="200px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw3184ddea/AW24/Deals/d5-aug26.jpg" alt="" height="200px" width="200px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw6c29473a/AW24/Deals/d4-aug26.jpg" alt="" height="200px" width="200px">
+    </div>
+    <div class="f">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dwf000ca91/A-blackfriday/Cat/suit-nov14.jpg" alt=""  height="200px" width="350px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw3a2c6164/A-blackfriday/Cat/kurta-nov14.jpg" alt=""  height="200px" width="350px">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw49998939/A-blackfriday/Cat/bestseller-nov14.jpg" alt=""  height="200px" width="350px">
+    </div>
+    <div class="g">
+        <h1>Recommended For You</h1>
+    </div>
+    <div class="h">
+        <div class="h1">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dwd4de49a9/images/aw23/fstve2059aw23red_1.jpg?sw=242&sh=363" alt=""  height="200px" width="200px" >
+            <div class="h11">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+
+            </div>
+        </div>
+        <div class="h1">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dwd4de49a9/images/aw23/fstve2059aw23red_1.jpg?sw=242&sh=363" alt=""  height="200px" width="200px" >
+            <div class="h11">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="h1">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dwd4de49a9/images/aw23/fstve2059aw23red_1.jpg?sw=242&sh=363" alt=""  height="200px" width="200px" >
+            <div class="h11">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="h1">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=242&sh=363" alt=""  height="200px" width="200px" >
+            <div class="h11">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="h1">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw1f47e0f5/images/aw23/festive2166aw23blk_1.jpg?sw=242&sh=363" alt=""  height="200px" width="200px" >
+            <div class="h11">
+                <div><p>red printed kurta</p>
+                <p>2000/-</p></div>
+                <div><i class="fa-regular fa-heart"></i></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="i">
+        <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dwb1d8079f/A-Festive/Midpage/kurtas-dec5.jpg" alt="" width="1000px">
+    </div>
+    <div class="j">
+        <h1>EXPLORE COLLECTION</h1>
+    </div>
+    <div class="k">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw3fdd2411/A-Festive/Explore/winter-dec5.jpg" alt=""  height="300px" width="300px">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw3afb1a56/A-Festive/Explore/bottomwear-explore-26sep.jpg" alt=""  height="300px" width="300px">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dwff7c03c5/A-Festive/Explore/indigo-nov14.jpg" alt=""  height="300px" width="300px">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_IN/dw98fd1731/A-Festive/Explore/online-sept20.jpg" alt=""  height="300px" width="300px">
+    </div>
+    <div class="l">
+        <div class="l1">
+            <h1>RECENTLY VIEWED</h1>
+        </div>
+         <div class="l6">
+        <div class="l2">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=242&sh=363" alt="" height="300px" width="300px">
+            <div class="l21">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+           
+        </div>
+        <div class="l3">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=242&sh=363" alt=""height="300px" width="300px">
+            <div class="l21">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+           
+        </div>
+        <div class="l4">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=242&sh=363" alt="" height="300px" width="300px">
+            <div class="l21">
+                <div><p>red printed kurta</p>
+                    <p>2000/-</p></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="m">
+    
+        <div class="m1">
+            <h1>Be a part of BIBA Family</h1>
+            <p>Keep yourself updated with style tips & more</p>
+        </div>
+        <div class="m2">
+            <input type="text" placeholder="enter your e-mail">
+            <button>subscribe</button>
+        </div>
+
+
+</div>
+<div class="n">
+    <div class="n1">
+        <i class="fa-solid fa-truck-fast"></i>
+        <p>free shipping</p>
+    </div>
+    <div class="n2">
+        <i class="fa-solid fa-wallet"></i>
+        <p>secure payments</p>
+    </div>
+    <div class="n3">
+        <i class="fa-solid fa-rotate-left"></i>
+        <p>easy return</p>
+    </div>
+
+</div>
+<div class="o">
+    <h4>Biba Indian Wear – Best Indian Ethnic Wear Dresses Online For Women & Girls
+    </h4>
+    <span>When it comes to ethnic wear for women, the only brand that comes to our mind is Biba. The first-ever brand came up with the idea of ready-made ethnic wear dresses for women. The brand has been in the retail business of ethnic dresses for a very long time with an Indian reach. Ethnic wear for women design by Biba not only presents impeccable design but also shows the evolvement of Indian ethnic dresses in its collection. The brand follows the two seasons of fashion for its launch of ethnic dresses for women.
+
+    </span>
+</div>
+<div class="p">
+    <div class="p1">
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+        <div class="p2">top categories</div>
+
+
+    </div>
+    <div class="p3">
+        <div class="p31">
+            <h3>follow us</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
+</div>
+<div class="q">
+    <p>We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By continuing to use the website, you agree with our Cookie Policy</p>
+    <button class="q1"> OK</button>
+</div>
+
+</body>
+</html>
